@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">20dp</dimen>
+    <dimen name="activity_vertical_margin">18dp</dimen>
+    <dimen name="toolbar_height">48dp</dimen>
+    <dimen name="navigation_width">250dp</dimen>
+    <dimen name="splash_icon_back_height">1dp</dimen>
+    <dimen name="splash_icon_height">120dp</dimen>
+    <dimen name="splash_icon_padding">10dp</dimen>
+    <dimen name="margin_card">20dp</dimen>
+    <dimen name="margin_card_vertical_category">5dp</dimen>
+    <dimen name="margin_card_horizontal_category">10dp</dimen>
+    <dimen name="margin_card_vertical_app">4dp</dimen>
+    <dimen name="margin_card_horizontal_app">6dp</dimen>
+    <dimen name="image_app">80dp</dimen>
+    <dimen name="min_height_app">100dp</dimen>
+    <dimen name="icon_category_size">80dp</dimen>
+    <dimen name="icon_category_padding">10dp</dimen>
+    <dimen name="padding_card">10dp</dimen>
+    <dimen name="image_app_detail">100dp</dimen>
+    <dimen name="margin_detail_vertical">20dp</dimen>
+    <dimen name="margin_detail_horizontal">20dp</dimen>
+    <dimen name="image_app_back_detail">250dp</dimen>
+    <dimen name="icon_detail">28dp</dimen>
+    <dimen name="icon_detail_padding">4dp</dimen>
+</resources>

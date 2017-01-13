@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="transition_toolbar">transition:TOOLBAR</string>
+    <string name="transition_name">transition:NAME</string>
+    <string name="transition_image">transition:IMAGE</string>
+    <string name="transition_circle">transition:CIRCLE</string>
+    <string name="transition_icon">transition:ICON</string>
+    <string name="transition_frame">transition:FRAME</string>
+
+</resources>

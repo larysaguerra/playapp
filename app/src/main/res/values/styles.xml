@@ -1,0 +1,87 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="SplashTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+
+    <style name="TextStyleBody" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="TextStyleBody.Primary" parent="TextStyleBody">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextStyleBody.Accent" parent="TextStyleBody">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="TextStyleMedium" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="TextStyleMedium.Primary" parent="TextStyleMedium">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextStyleMedium.Accent" parent="TextStyleMedium">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="TextStyleTitle" parent="Base.TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="TextStyleTitle.Primary" parent="TextStyleTitle">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextStyleTitle.Accent" parent="TextStyleTitle">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="TextStyleDisplay" parent="Base.TextAppearance.AppCompat.Display1">
+
+    </style>
+
+    <style name="TextStyleDisplay.Primary" parent="TextStyleDisplay">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextStyleDisplay.Accent" parent="TextStyleDisplay">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <!--<style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>
+    <style name="TextAppearance.AppCompat.Body2" parent="Base.TextAppearance.AppCompat.Body2"/>
+    <style name="TextAppearance.AppCompat.Button" parent="Base.TextAppearance.AppCompat.Button"/>
+    <style name="TextAppearance.AppCompat.Caption" parent="Base.TextAppearance.AppCompat.Caption"/>
+    <style name="TextAppearance.AppCompat.Display1" parent="Base.TextAppearance.AppCompat.Display1"/>
+    <style name="TextAppearance.AppCompat.Display2" parent="Base.TextAppearance.AppCompat.Display2"/>-->
+
+
+</resources>

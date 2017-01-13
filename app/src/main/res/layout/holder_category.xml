@@ -1,0 +1,51 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_category"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dp"
+    android:layout_marginLeft="@dimen/margin_card_horizontal_category"
+    android:layout_marginRight="@dimen/margin_card_horizontal_category"
+    android:layout_marginTop="@dimen/margin_card_vertical_category"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_card">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding_card">
+
+            <View
+                android:id="@+id/icon_back"
+                android:layout_width="@dimen/icon_category_size"
+                android:layout_height="@dimen/icon_category_size"
+
+                android:transitionName="@string/transition_icon" />
+
+            <com.mikepenz.iconics.view.IconicsImageView
+                android:id="@+id/icon_category"
+                android:layout_width="@dimen/icon_category_size"
+                android:layout_height="@dimen/icon_category_size"
+                android:padding="@dimen/icon_category_padding"
+                app:iiv_color="@color/colorPrimary"
+                app:iiv_icon="cmd_menu" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name_category"
+            style="@style/TextStyleMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:transitionName="@string/transition_name" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

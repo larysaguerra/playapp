@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <!--header-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_detail_vertical"
+                android:layout_marginTop="@dimen/margin_detail_vertical"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_app_detail"
+                    android:layout_width="@dimen/image_app_detail"
+                    android:layout_height="@dimen/image_app_detail"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circle_primary"
+                    android:transitionName="@string/transition_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_app_detail"
+                        style="@style/TextStyleTitle.Primary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_card"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:maxLines="2"
+                        android:text="@string/app_name"
+                        android:textStyle="bold"
+                        android:transitionName="@string/transition_name" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextStyleBody"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/by"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/artist_app_detail"
+                            style="@style/TextStyleBody"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/by"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <!--price-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_card">
+
+                        <TextView
+                            android:id="@+id/price_currency_app_detail"
+                            style="@style/TextStyleMedium.Accent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/app_name" />
+
+                        <TextView
+                            style="@style/TextStyleMedium.Accent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=": " />
+
+                        <TextView
+                            android:id="@+id/price_amount_app_detail"
+                            style="@style/TextStyleMedium.Accent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/app_name"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/category_app_detail"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_detail_horizontal"
+                android:layout_marginRight="@dimen/margin_detail_horizontal"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/app_name" />
+
+            <!--description-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_detail_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_app_detail"
+                    style="@style/TextStyleMedium.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_card"
+                    android:layout_weight="1"
+                    android:gravity="top|start"
+                    android:text="@string/app_name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/TextStyleBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_card"
+                    android:layout_weight="1"
+                    android:gravity="top|start"
+                    android:text="@string/description"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/decription_app_detail"
+                    style="@style/TextStyleBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_card"
+                    android:layout_weight="1"
+                    android:gravity="top|start"
+                    android:text="@string/description" />
+
+                <TextView
+                    style="@style/TextStyleBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_card"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:maxLines="1"
+                    android:text="@string/contact"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/link_app_detail"
+                    style="@style/TextStyleBody.Accent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:clickable="true"
+                    android:linksClickable="true"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center|start"
+                    android:maxLines="1"
+                    android:text="@string/app_name" />
+
+            </LinearLayout>
+
+            <!--details-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_detail_vertical"
+                android:layout_marginTop="@dimen/margin_detail_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextStyleMedium.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_card"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:maxLines="1"
+                    android:text="@string/details"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:layout_width="@dimen/icon_detail"
+                        android:layout_height="@dimen/icon_detail"
+                        android:padding="@dimen/icon_detail_padding"
+                        app:iiv_color="@color/textColorPrimary"
+                        app:iiv_icon="cmd_copyright" />
+
+                    <TextView
+                        android:id="@+id/rights_app_detail"
+                        style="@style/TextStyleBody"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center|start"
+                        android:maxLines="1"
+                        android:text="@string/app_name" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:layout_width="@dimen/icon_detail"
+                        android:layout_height="@dimen/icon_detail"
+                        android:padding="@dimen/icon_detail_padding"
+                        app:iiv_color="@color/textColorPrimary"
+                        app:iiv_icon="cmd_calendar_check" />
+
+                    <TextView
+                        android:id="@+id/date_app_detail"
+                        style="@style/TextStyleBody"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center|start"
+                        android:maxLines="1"
+                        android:text="@string/app_name" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/ctlLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="parallax">
+
+                <ImageView
+                    android:id="@+id/image_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image_app_back_detail"
+                    android:scaleType="centerCrop" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image_app_back_detail"
+                    android:background="@drawable/gradient_bootom" />
+
+            </RelativeLayout>
+
+
+            <include layout="@layout/toolbar_trans" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

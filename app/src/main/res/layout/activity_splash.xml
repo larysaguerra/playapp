@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/background_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <com.mikepenz.iconics.view.IconicsImageView
+        android:id="@+id/icon_splash"
+        android:layout_width="@dimen/splash_icon_height"
+        android:layout_height="@dimen/splash_icon_height"
+        android:alpha="0"
+        android:layout_centerInParent="true"
+        app:iiv_color="@color/colorAccent"
+        app:iiv_icon="cmd_android_debug_bridge"
+        app:iiv_padding="@dimen/splash_icon_padding" />
+
+    <TextView
+        android:id="@+id/text_name"
+        style="@style/TextAppearance.AppCompat.Display2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_splash"
+        android:padding="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="@string/app_name"
+        android:visibility="gone"/>
+
+</RelativeLayout>

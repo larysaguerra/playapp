@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="category_name">
+        <item>New Applications</item>
+        <item>New Free Applications</item>
+        <item>New Paid Applications</item>
+        <item>Top Free Applications</item>
+        <item>New Paid Applications</item>
+        <item>Top Free iPad Applications</item>
+        <item>Top Free iPad Applications</item>
+        <item>Top Grossing Applications</item>
+        <item>Top Grossing iPad Applications</item>
+        <item>Top iPad Applications</item>
+        <item>Top Paid iPad Applications</item>
+    </array>
+
+    <array name="category_type">
+        <item>newapplications</item>
+        <item>newfreeapplications</item>
+        <item>newpaidapplications</item>
+        <item>topfreeapplications</item>
+        <item>topfreeipadapplications</item>
+        <item>topgrossingapplications</item>
+        <item>topgrossingipadapplications</item>
+        <item>toppaidapplications</item>
+        <item>toppaidipadapplications</item>
+    </array>
+
+    <array name="category_icon">
+        <item>cmd_cellphone_basic</item>
+        <item>cmd_android</item>
+        <item>cmd_apple</item>
+        <item>cmd_windows</item>
+        <item>cmd_android_studio</item>
+        <item>cmd_apple_finder</item>
+        <item>cmd_android_debug_bridge</item>
+        <item>cmd_apple_ios</item>
+        <item>cmd_tablet_ipad</item>
+    </array>
+
+</resources>
