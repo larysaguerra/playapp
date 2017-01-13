@@ -13,12 +13,12 @@
     <dimen name="margin_card_horizontal_category">20dp</dimen>
     <dimen name="margin_card_vertical_app">10dp</dimen>
     <dimen name="margin_card_horizontal_app">10dp</dimen>
-    <dimen name="image_app">120dp</dimen>
+    <dimen name="image_app">150dp</dimen>
     <dimen name="min_height_app">200dp</dimen>
     <dimen name="icon_category_size">120dp</dimen>
     <dimen name="icon_category_padding">20dp</dimen>
     <dimen name="padding_card">15dp</dimen>
-    <dimen name="image_app_detail">120dp</dimen>
+    <dimen name="image_app_detail">500dp</dimen>
     <dimen name="margin_detail_vertical">10dp</dimen>
     <dimen name="margin_detail_horizontal">20dp</dimen>
     <dimen name="image_app_back_detail">300dp</dimen>

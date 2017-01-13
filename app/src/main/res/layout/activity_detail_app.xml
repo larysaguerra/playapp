@@ -27,12 +27,12 @@
                 android:layout_marginTop="@dimen/margin_detail_vertical"
                 android:orientation="horizontal">
 
-                <de.hdodenhof.circleimageview.CircleImageView
+                <ImageView
                     android:id="@+id/image_app_detail"
                     android:layout_width="@dimen/image_app_detail"
                     android:layout_height="@dimen/image_app_detail"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/circle_primary"
+                    android:background="@color/colorPrimary"
                     android:transitionName="@string/transition_image" />
 
                 <LinearLayout
