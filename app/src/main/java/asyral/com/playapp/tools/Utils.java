@@ -33,11 +33,6 @@ public class Utils {
         return new IconicsDrawable(context, icon).color(color).sizeDp(size);
     }
 
-
-    public static IconicsDrawable getIcon(Context context, CommunityMaterial.Icon icon) {
-        return new IconicsDrawable(context, icon);
-    }
-
     public static IconicsDrawable getIcon(Context context, String icon, int size) {
         return new IconicsDrawable(context, icon).sizeDp(size).color(Color.WHITE);
     }

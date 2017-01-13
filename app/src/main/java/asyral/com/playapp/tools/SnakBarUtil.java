@@ -25,58 +25,28 @@ public class SnakBarUtil {
     public static TSnackbar snackBarTop(Context c, View v, int mjs, int duration) {
         TSnackbar snackbar = TSnackbar.make(v, mjs, duration);
         View sbView = snackbar.getView();
-        TextView text = (TextView) sbView.findViewById(com.androidadvance.topsnackbar.R.id.snackbar_text);
-        Button button = (Button) sbView.findViewById(com.androidadvance.topsnackbar.R.id.snackbar_action);
-
         sbView.setBackgroundColor(ContextCompat.getColor(c, R.color.colorAccentTrans));
-        // text.setTypeface(FontCache.getTypeface(c, c.getString(R.string.font_path_medium)));
-        //text.setTextColor(ContextCompat.getColor(c, R.color.colorWhite));
-        //button.setTypeface(FontCache.getTypeface(c, c.getString(R.string.font_path_bold)));
-        //button.setTextColor(ContextCompat.getColor(c, R.color.colorWhite));
-
         return snackbar;
     }
 
     public static TSnackbar snackBarTop(Context c, View v, String mjs, int duration) {
         TSnackbar snackbar = TSnackbar.make(v, mjs, duration);
         View sbView = snackbar.getView();
-        TextView text = (TextView) sbView.findViewById(com.androidadvance.topsnackbar.R.id.snackbar_text);
-        Button button = (Button) sbView.findViewById(com.androidadvance.topsnackbar.R.id.snackbar_action);
-
         sbView.setBackgroundColor(ContextCompat.getColor(c, R.color.colorAccentTrans));
-        // text.setTypeface(FontCache.getTypeface(c, c.getString(R.string.font_path_medium)));
-        //text.setTextColor(ContextCompat.getColor(c, R.color.colorWhite));
-        //button.setTypeface(FontCache.getTypeface(c, c.getString(R.string.font_path_bold)));
-        //button.setTextColor(ContextCompat.getColor(c, R.color.colorWhite));
-
         return snackbar;
     }
 
     public static Snackbar snackBarBotton(Context c, View v, int mjs, int duration) {
         Snackbar snackbar = Snackbar.make(v, mjs, duration);
         View sbView = snackbar.getView();
-        TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
-        Button button = (Button) sbView.findViewById(android.support.design.R.id.snackbar_action);
-
         sbView.setBackgroundColor(ContextCompat.getColor(c, R.color.colorAccentTrans));
-        //textView.setTypeface(FontCache.getTypeface(c, c.getString(R.string.font_path_light)));
-        //textView.setTextColor(ContextCompat.getColor(c, R.color.colorWhite));
-        //button.setTypeface(FontCache.getTypeface(c, c.getString(R.string.font_path_bold)));
-        //button.setTextColor(ContextCompat.getColor(c, R.color.colorWhite));
         return snackbar;
     }
 
     public static Snackbar snackBarBotton(Context c, View v, String mjs, int duration) {
         Snackbar snackbar = Snackbar.make(v, mjs, duration);
         View sbView = snackbar.getView();
-        TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
-        Button button = (Button) sbView.findViewById(android.support.design.R.id.snackbar_action);
-
         sbView.setBackgroundColor(ContextCompat.getColor(c, R.color.colorAccentTrans));
-        //textView.setTypeface(FontCache.getTypeface(c, c.getString(R.string.font_path_light)));
-        //textView.setTextColor(ContextCompat.getColor(c, R.color.colorWhite));
-        //button.setTypeface(FontCache.getTypeface(c, c.getString(R.string.font_path_bold)));
-        //button.setTextColor(ContextCompat.getColor(c, R.color.colorWhite));
         return snackbar;
     }
 }
