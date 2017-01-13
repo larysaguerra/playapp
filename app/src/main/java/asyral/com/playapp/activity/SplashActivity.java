@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.view.animation.BounceInterpolator;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.github.florent37.viewanimator.AnimationListener;
 import com.github.florent37.viewanimator.ViewAnimator;
@@ -29,7 +28,7 @@ public class SplashActivity extends ActivityUtil {
 
     private RelativeLayout background;
     private IconicsImageView icon;
-    private TextView text;
+    //private TextView text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,19 +46,17 @@ public class SplashActivity extends ActivityUtil {
     private void findViews() {
         background = (RelativeLayout) findViewById(R.id.background_splash);
         icon = (IconicsImageView) findViewById(R.id.icon_splash);
-        text = (TextView) findViewById(R.id.text_name);
+        //text = (TextView) findViewById(R.id.text_name);
     }
 
     private void setActions() {
         int colorFrom = ContextCompat.getColor(this, R.color.colorAccent);
         int colorTo = ContextCompat.getColor(this, R.color.colorPrimary);
-        int colorToWhite = ContextCompat.getColor(this, R.color.colorWhite);
+        //int colorToWhite = ContextCompat.getColor(this, R.color.colorWhite);
 
         ViewAnimator
                 .animate(background).backgroundColor(colorFrom, colorTo)
                 .duration(AnimationsUtil.ANIMATION_MEDIUM)
-                //.andAnimate(text).textColor(colorFrom, colorToWhite)
-                //.duration(AnimationsUtil.ANIMATION_MEDIUM)
                 .andAnimate(icon).bounceIn().interpolator(new BounceInterpolator())
                 .duration(AnimationsUtil.ANIMATION_LONG).accelerate().startDelay(AnimationsUtil.ANIMATION_DELAY_SHORT)
                 .onStart(new AnimationListener.Start() {
@@ -87,9 +84,6 @@ public class SplashActivity extends ActivityUtil {
                     @Override
                     public void onStop() {
                         Intent intent = new Intent(SplashActivity.this, CategoryActivity.class);
-                        /*ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(SplashActivity.this,
-                                Pair.create((View) text, getString(R.string.transition_name)));
-                        ActivityCompat.startActivity(SplashActivity.this, intent, options.toBundle());*/
                         startActivity(intent);
                         finish();
                     }

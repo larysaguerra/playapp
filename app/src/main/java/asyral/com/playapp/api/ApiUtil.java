@@ -20,7 +20,6 @@ import retrofit2.http.Query;
 public class ApiUtil {
 
     public interface AppInterface {
-        //example-> https://itunes.apple.com/us/rss/topfreeapplications/limit=20/json
         @GET("us/rss/{category}/limit={limit}/json")
         Call<Feed> getApps(@Path("category") String category,
                            @Path("limit") String limit);

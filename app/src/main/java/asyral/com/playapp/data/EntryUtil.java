@@ -90,71 +90,6 @@ public class EntryUtil {
                 .findFirst();
     }
 
-
-    public static Entry getEntry(Context context, String id) {
-        Utils.logD("getEntry", "getEntry id " + id);
-        EntryRealmObject entryRealmObject = getEntryRealmObject(context, id);
-        return convertRealObjectToEntry(entryRealmObject);
-
-//        Entry entry = new Entry();
-//        String categoryType = entryRealmObject.getCategoryType();
-//        entry.setCategoryType(categoryType);
-//
-//        Id id1 = new Id();
-//        Attributes____ attributes____ = new Attributes____();
-//        attributes____.setImId(entryRealmObject.getId());
-//        id1.setAttributes(attributes____);
-//        entry.setId(id1);
-//
-//        ImName imName = new ImName();
-//        imName.setLabel(entryRealmObject.getName());
-//        entry.setImName(imName);
-//
-//        Title title = new Title();
-//        title.setLabel(entryRealmObject.getTitle());
-//        entry.setTitle(title);
-//
-//        Rights rights = new Rights();
-//        rights.setLabel(entryRealmObject.getRights());
-//        entry.setRights(rights);
-//
-//        ImPrice imPrice = new ImPrice();
-//        Attributes_ attributes_ = new Attributes_();
-//        attributes_.setAmount(entryRealmObject.getPriceAmount());
-//        attributes_.setCurrency(entryRealmObject.getPriceCurrency());
-//        imPrice.setAttributes(attributes_);
-//        entry.setImPrice(imPrice);
-//
-//        ImArtist imArtist = new ImArtist();
-//        imArtist.setLabel(entryRealmObject.getArtistLabel());
-//        Attributes_____ attributes_____ = new Attributes_____();
-//        attributes_____.setHref(entryRealmObject.getArtistAttributes());
-//        imArtist.setAttributes(attributes_____);
-//        entry.setImArtist(imArtist);
-//
-//        List<ImImage> imImages = new ArrayList<>();
-//        for (int i = 0; i < entryRealmObject.getImageRealmObject().size(); i++) {
-//            ImImage imImage = new ImImage();
-//            imImage.setLabel(entryRealmObject.getImageRealmObject().get(i).getLabel());
-//            Attributes attributes = new Attributes();
-//            attributes.setHeight(entryRealmObject.getImageRealmObject().get(i).getHeight());
-//            imImage.setAttributes(attributes);
-//            imImages.add(imImage);
-//        }
-//        entry.setImImage(imImages);
-//
-//        Category category = new Category();
-//        Attributes______ attributes______ = new Attributes______();
-//        attributes______.setImId(entryRealmObject.getCategoryRealmObject().getId());
-//        attributes______.setLabel(entryRealmObject.getCategoryRealmObject().getLabel());
-//        attributes______.setTerm(entryRealmObject.getCategoryRealmObject().getTerm());
-//        attributes______.setScheme(entryRealmObject.getCategoryRealmObject().getScheme());
-//        category.setAttributes(attributes______);
-//        entry.setCategory(category);
-//
-//        return entry;
-    }
-
     private static Entry convertRealObjectToEntry(EntryRealmObject entryRealmObject) {
         Entry entry = new Entry();
 
@@ -216,16 +151,13 @@ public class EntryUtil {
     }
 
     public static ArrayList<Entry> getEntryByCategory(Context context, String categoryType) {
-        Utils.logD("getEntry", "getEntryByCategory() " + categoryType);
         ArrayList<EntryRealmObject> entryRealmObjects = getEntryRealmObjectByCategory(context, categoryType);
-
         ArrayList<Entry> entryArrayList = new ArrayList<>();
         if (!entryRealmObjects.isEmpty()) {
             for (int i = 0; i < entryRealmObjects.size(); i++) {
                 entryArrayList.add(convertRealObjectToEntry(entryRealmObjects.get(i)));
             }
         }
-        Utils.logD("getEntry", "entryArrayList.size() " + entryArrayList.size());
         return entryArrayList;
     }
 
@@ -245,20 +177,7 @@ public class EntryUtil {
 
             }
         });
-        Utils.logD("getEntry", "entryRealmObjects.size() " + entryRealmObjects.size());
         return entryRealmObjects;
     }
-
-    private static ArrayList<EntryRealmObject> getEntryRealmObjectArray(Context context) {
-        ArrayList<EntryRealmObject> entryRealmObjects = new ArrayList<>();
-        Realm realm = Realm.getInstance(configuration(context));
-        realm.where(EntryRealmObject.class).findAll();
-        RealmResults<EntryRealmObject> models = realm.where(EntryRealmObject.class).findAll();
-        for (int i = 0; i < realm.where(EntryRealmObject.class).count(); i++) {
-            entryRealmObjects.add(models.get(i));
-        }
-        return entryRealmObjects;
-    }
-
 
 }

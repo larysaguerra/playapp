@@ -33,7 +33,6 @@ public class ActivityUtil extends AppCompatActivity {
 
     private String TAG = "ActivityUtil";
     private ConnectionReceiver connectionReceiver = null;
-    private Boolean connectionOn = true;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -107,17 +106,15 @@ public class ActivityUtil extends AppCompatActivity {
         ConnectionUtil.setOnChangeConnection(new ConnectionUtil.OnChangeConnection() {
             @Override
             public void onLine() {
-                //Utils.logD("TAG", "ON");
+                Utils.logD("TAG", "ON");
                 //Utils.toastLong(getApplicationContext(), getApplicationContext().getString(R.string.connection_off));
             }
 
             @Override
             public void offLine() {
-                //Utils.logD("TAG", "OFF");
-                if(getApplicationContext() instanceof CategoryActivity){
-                    Utils.toastLong(getApplicationContext(),
-                            getApplicationContext().getString(R.string.connection_off));
-                }
+                Utils.logD("TAG", "OFF");
+                Utils.toastLong(getApplicationContext(),
+                        getApplicationContext().getString(R.string.connection_off));
             }
         });
     }
